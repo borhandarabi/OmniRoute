@@ -29,6 +29,7 @@ on:
 # push to GHCR grant packages: write themselves (Scorecard TokenPermissions).
 permissions:
   contents: read
+  packages: write
 
 jobs:
   prepare:
