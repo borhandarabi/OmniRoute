@@ -166,7 +166,7 @@ jobs:
         with:
           registry: ghcr.io
           username: borhandarabi
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Build and push platform image by digest
         id: build
@@ -266,7 +266,7 @@ jobs:
         with:
           registry: ghcr.io
           username: borhandarabi
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Download base digests
         uses: actions/download-artifact@v8
